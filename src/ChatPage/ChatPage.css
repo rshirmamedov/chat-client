@@ -1,0 +1,44 @@
+.ChatPage {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.ChatPage-messages {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex: 1;
+    list-style-type: none;
+    margin: 0px;
+    overflow: auto;
+}
+
+.ChatPage-messages li:nth-child(odd) {
+    background: #eee;
+}
+
+.ChatPage-messages li {
+    padding: 5px 10px;
+}
+
+.ChatPage-form {
+    height: 100px;
+}
+
+.ChatPage-form > form {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.ChatPage-form > button:last-child {
+    text-decoration: underline;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+}
